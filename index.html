@@ -1,30 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="refresh" content="3600">
-<style>
-  html,body{margin:0;padding:0;height:100%;background:#000;
-            display:flex;flex-direction:column;align-items:center;justify-content:space-between;}
-  .current-wrap{flex:1;display:flex;align-items:center;justify-content:center;}
-  .forecast-wrap{width:100%;display:flex;align-items:center;justify-content:center;padding-bottom:10px;}
-</style>
+<meta http-equiv="refresh" content="900">
+<style>html,body,iframe{margin:0;padding:0;width:100%;height:100%;border:0;}</style>
 </head>
 <body>
-
-<div class="current-wrap">
-<!-- CURRENT-ONLY WIDGET: paste your data-mode="Current" snippet here -->
-<a class="weatherwidget-io" href="https://forecast7.com/en/43d43n96d18/rock-rapids/?unit=us"
-data-label_1="ROCK RAPIDS" data-label_2="WEATHER" data-mode="Current" data-theme="original">ROCK RAPIDS WEATHER</a>
-</div>
-
-<div class="forecast-wrap">
-<a class="weatherwidget-io" href="https://forecast7.com/en/43d43n96d18/rock-rapids/?unit=us"
-data-label_1="ROCK RAPIDS" data-label_2="WEATHER" data-mode="Forecast" data-theme="original">ROCK RAPIDS WEATHER</a>
-</div>
-
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
-
+<iframe src="https://staticbaronwebapps.velocityweather.com/digitial_wx/widgets/current/index.html?initjson=/digitial_wx/widgets/dcms/5b031feb-e55d-4253-b9f2-ac5b7662f47e/live/init.json"></iframe>
 </body>
 </html>
